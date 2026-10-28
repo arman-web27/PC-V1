@@ -1924,7 +1924,7 @@
           <form
             id="orderForm"
             method="post"
-            action="https://script.google.com/macros/s/AKfycbyeE82FEPSsXx-D4xrtz1CCKRqrUphicTmQKZD1wYvon5MHZC-m28-pwMfN5sPWm9-R/exec"
+            action="https://script.google.com/macros/s/AKfycbzfyP4fCjxgCd2NoUPU3eMlv5IibzEEM9ypFL573TXzrSgMJYvnJbG4u5IZtkSiwYOO/exec"
             accept-charset="UTF-8"
             onsubmit="return submitForm(event);"
           >
@@ -2333,7 +2333,7 @@
           }).format(new Date()),
         );
         setHidden("event_id", eventId());
-        setHidden("page_url", location.href);
+        // setHidden("page_url", location.href);
         setHidden("referrer", document.referrer);
 
         formSubmitting = true;
@@ -2356,7 +2356,7 @@
             body: payload.toString(),
             keepalive: true,
           });
-          window.location.assign(THANK_YOU_PAGE);
+          // window.location.assign(THANK_YOU_PAGE);
         } catch (error) {
           formSubmitting = false;
           submitBtn.disabled = false;
